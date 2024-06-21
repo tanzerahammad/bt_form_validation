@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bt_form_validation</title>
+    <link rel="icon" href="images/fav_icon1.png">
+    
+    <!-- css link -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+
+
+  </head>
+  <body>
+    <div class="container">
+       
+        <!--form validation-->
+        <form class="row g-3 needs-validation" novalidate>
+
+            <!--first_name-->
+          <div class="col-md-6">
+            <label for="f_name" class="form-label">First name</label>
+            <input type="text" class="form-control f_name" id="f_name" name="f_name" placeholder="Enter Your First name"  required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="invalid-feedback">
+                Please Enter Your First name.
+            </div>
+          </div>
+
+          <!--last_name-->
+          <div class="col-md-6">
+            <label for="l_name" class="form-label">Last name</label>
+            <input type="text" class="form-control l_name" id="l_name" name="l_name" placeholder="Enter Your Last name." required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="invalid-feedback">
+                Please Enter Your Last name.
+            </div>
+          </div>
+
+          <!--Email_address-->
+          <div class="col-md-12">
+            <label for="email_address" class="form-label">Email Address</label>
+            <input type="email" class="form-control email_address" id="email_address" name="email_address" placeholder="Enter Your Email Address." required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="invalid-feedback">
+                Please Enter Your Email Address.
+            </div>
+          </div>
+
+          <!--check_box-->
+          <div class="col-12">
+            <div class="form-check">
+            <input class="form-check-input check1" type="checkbox" id="check1" name="check1" required>
+            <label class="form-check-label" for="check1">Agree to terms and conditions</label>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="invalid-feedback">
+                You must agree before submitting.
+            </div>
+            </div>
+          </div>
+
+          <!--submit-->
+          <div class="col-12">
+            <button class="btn btn-primary" type="submit">Submit form</button>
+          </div>
+        </form>
+        <!--form validation-->
+    </div>
+    <!-- script link -->
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
